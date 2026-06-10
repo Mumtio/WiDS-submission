@@ -6,7 +6,7 @@ Below is an outline of how to reproduce our solution for the **WiDS Global Datat
 
 If you run into any trouble with the setup/code or have any questions, please contact us at:
 
-**Contact email:** `<your_email_here>`
+**Contact email:** `testbuetian1@gmail.com`
 
 ---
 
@@ -150,19 +150,7 @@ All important input/output paths are specified in:
 SETTINGS.json
 ```
 
-Example:
 
-```json
-{
-  "RAW_DATA_DIR": "./data/raw",
-  "TRAIN_DATA_PATH": "./data/raw/train.csv",
-  "TEST_DATA_PATH": "./data/raw/test.csv",
-  "MODEL_DIR": "./models",
-  "MODEL_PATH": "./models/model_bundle.pkl",
-  "SUBMISSION_DIR": "./outputs",
-  "SUBMISSION_PATH": "./outputs/submission.csv"
-}
-```
 
 When running inside Kaggle, the notebook may use the Kaggle input path directly:
 
@@ -248,35 +236,6 @@ The notebook automatically:
 
 There is one main way to reproduce the solution:
 
-## Full notebook run
-
-Run the Kaggle notebook from top to bottom:
-
-```text
-WiDS_2026_solution.ipynb
-```
-
-This will:
-
-1. Load the official competition train/test data.
-2. Train the full model ensemble.
-3. Generate validation diagnostics.
-4. Create the final prediction file.
-5. Save `submission.csv`.
-
-Expected output:
-
-```text
-submission.csv
-```
-
-If using the script version, run:
-
-```bash
-python WiDS_2026_solution.py
-```
-
----
 
 # PREDICTION
 
@@ -359,11 +318,6 @@ submission.csv
 outputs/submission.csv
 ```
 
-If model saving is enabled, it may also overwrite files inside:
-
-```text
-models/
-```
 
 No original Kaggle data files are modified.
 
