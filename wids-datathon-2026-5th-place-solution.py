@@ -12,7 +12,7 @@ subprocess.run(["pip", "install", "scikit-survival", "--quiet"], check=True)
 from sksurv.util import Surv
 from sksurv.ensemble import RandomSurvivalForest
 
-print("All good ✅")
+print("All good ")
 
 # %%
 # WiDS 2026 Wildfire Survival Notebook
@@ -66,9 +66,21 @@ from sksurv.linear_model import CoxPHSurvivalAnalysis
 # ============================================================
 # CONFIG
 # ============================================================
+
+def resolve_data_dir() -> Path:
+    candidates = [
+        Path("/kaggle/input/competitions/WiDSWorldWide_GlobalDathon26"),
+        Path(__file__).resolve().parent / "kaggle/input/competitions/WiDSWorldWide_GlobalDathon26",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
 @dataclass
 class Config:
-    data_dir: Optional[Path] = Path("/kaggle/input/competitions/WiDSWorldWide_GlobalDathon26")
+    data_dir: Optional[Path] = resolve_data_dir()
     train_name: str = "train.csv"
     test_name: str = "test.csv"
     horizons: Tuple[int, ...] = (12, 24, 48, 72)

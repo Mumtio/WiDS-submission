@@ -129,14 +129,8 @@ The notebook expects:
 
 If running locally, place the data according to the paths specified in `SETTINGS.json`.
 
-Example local structure:
 
-```text
-data/
-└── raw/
-    ├── train.csv
-    └── test.csv
-```
+
 
 The Kaggle competition data is excluded from this archive because it must be obtained directly from Kaggle by users who have accepted the competition rules.
 
