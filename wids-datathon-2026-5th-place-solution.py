@@ -164,7 +164,7 @@ def tune_meta_weight(base_oof, meta_oof, t, e, horizons):
           pred[:, 2],
           pred[:, 3],
       )
-        print(f"w={w:.2f} → hybrid={metrics['hybrid']:.6f}")
+        print(f"w={w:.2f} -> hybrid={metrics['hybrid']:.6f}")
 
         if metrics["hybrid"] > best_score:
             best_score = metrics["hybrid"]
@@ -210,7 +210,7 @@ def find_best_temp(oof_pred, train, time_col, event_col, horizons, isos):
             p[:, horizons.index(72)]
         )
 
-        print(f"temp={temp} → {m['hybrid']:.6f}")
+        print(f"temp={temp} -> {m['hybrid']:.6f}")
 
         if m["hybrid"] > best_score:
             best_score = m["hybrid"]
