@@ -5,13 +5,13 @@ This solution was developed as a single Kaggle notebook workflow.
 The complete model ensemble is trained inside:
 
 ```text
-WiDS_2026_solution.ipynb
+wids-datathon-2026-5th-place-solution.ipynb
 ```
 
 A Python script version is also included:
 
 ```text
-WiDS_2026_solution.py
+wids-datathon-2026-5th-place-solution.py
 ```
 
 The notebook/script trains the full survival-analysis ensemble from scratch and generates the final submission file.
@@ -43,13 +43,13 @@ models/model_bundle.pkl
 At the time of this archive, the reproducible workflow is:
 
 ```text
-Run WiDS_2026_solution.ipynb from top to bottom
+Run wids-datathon-2026-5th-place-solution.ipynb from top to bottom
 ```
 
 or:
 
 ```bash
-python WiDS_2026_solution.py
+python wids-datathon-2026-5th-place-solution.py
 ```
 
 This retrains the models and writes the final prediction file.
@@ -75,11 +75,7 @@ The final generated prediction file is:
 submission.csv
 ```
 
-or, if using the documented output directory:
 
-```text
-outputs/submission.csv
-```
 
 ## External Data
 

@@ -5,13 +5,13 @@ This solution was developed as a single Kaggle notebook.
 The main solution file is:
 
 ```text
-WiDS_2026_solution.ipynb
+wids-datathon-2026-5th-place-solution.ipynb
 ```
 
 A Python script version is also included:
 
 ```text
-WiDS_2026_solution.py
+wids-datathon-2026-5th-place-solution.py
 ```
 
 The solution trains the full model ensemble and generates the final submission in one run.
@@ -23,7 +23,7 @@ The solution trains the full model ensemble and generates the final submission i
 Recommended reproduction method:
 
 ```text
-Run all cells in WiDS_2026_solution.ipynb from top to bottom.
+Run all cells in wids-datathon-2026-5th-place-solution.ipynb from top to bottom.
 ```
 
 The notebook will:
@@ -57,7 +57,7 @@ The notebook was also exported as a Python script.
 To run the full training and prediction pipeline from the command line:
 
 ```bash
-python WiDS_2026_solution.py
+python wids-datathon-2026-5th-place-solution.py
 ```
 
 This command performs both training and prediction.
@@ -113,7 +113,7 @@ pip install -r requirements.txt
 3. Run:
 
 ```bash
-python WiDS_2026_solution.py
+python wids-datathon-2026-5th-place-solution.py
 ```
 
 ---

@@ -1,3 +1,15 @@
-.
-./models
-
+WiDS submission/
+├── kaggle/
+│   └── input/
+│       └── competitions/
+│           └── WiDSWorldWide_GlobalDathon26/
+│               ├── train.csv
+│               └── test.csv
+├── models/
+│   └── README_models.md
+├── directory_structure.txt
+├── entry_points.md
+├── readme.md
+├── requirements.txt
+├── wids-datathon-2026-5th-place-solution.ipynb
+└── wids-datathon-2026-5th-place-solution.py

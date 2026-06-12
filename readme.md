@@ -16,10 +16,10 @@ If you run into any trouble with the setup/code or have any questions, please co
 README.md
     This file. It explains the environment, data setup, and how to reproduce the solution.
 
-WiDS_2026_solution.ipynb
+wids-datathon-2026-5th-place-solution.ipynb
     Main Kaggle notebook used to train the models and generate the final submission.
 
-WiDS_2026_solution.py
+wids-datathon-2026-5th-place-solution.py
     Python script version of the notebook.
 
 requirements.txt
@@ -212,8 +212,8 @@ No separate preprocessing file is required.
 The feature engineering functions are included in:
 
 ```text
-WiDS_2026_solution.ipynb
-WiDS_2026_solution.py
+wids-datathon-2026-5th-place-solution.ipynb
+wids-datathon-2026-5th-place-solution.py
 ```
 
 The notebook automatically:
@@ -242,7 +242,7 @@ To generate predictions on a new test set:
 3. Run:
 
 ```bash
-python WiDS_2026_solution.py
+python wids-datathon-2026-5th-place-solution.py
 ```
 
 The output submission will be saved to:
@@ -329,7 +329,7 @@ Only the official Kaggle competition train/test data was used.
 
 Recommended Kaggle reproduction:
 
-1. Open `WiDS_2026_solution.ipynb` in Kaggle.
+1. Open `wids-datathon-2026-5th-place-solution.ipynb` in Kaggle.
 2. Attach the official WiDS Global Datathon 2026 competition dataset.
 3. Run all cells from top to bottom.
 4. Confirm that `submission.csv` is created in the working directory.
@@ -338,7 +338,7 @@ Local reproduction:
 
 ```bash
 pip install -r requirements.txt
-python WiDS_2026_solution.py
+python wids-datathon-2026-5th-place-solution.py
 ```
 
 Before local reproduction, place the competition data according to `SETTINGS.json`.
